@@ -13,7 +13,7 @@ defmodule Exmqtt.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       deps: deps(),
       name: "Exmqtt",
-      source_url: "https://github.com/brianbinbin/exmqtt"
+      source_url: "https://github.com/dfcarpenter/exmqtt"
     ]
   end
 
@@ -31,7 +31,7 @@ defmodule Exmqtt.MixProject do
   defp deps do
     [
       {:gen_state_machine, "~> 2.1 or ~>3.0"},
-      {:gun, "~> 1.3.3"},
+      {:gun, "~> 2.0.0-rc.2"},
     ]
   end
 
@@ -41,7 +41,7 @@ defmodule Exmqtt.MixProject do
 
   defp package() do
     [
-      maintainers: ["Brian Bian"],
+      maintainers: ["Brian Bian", "Daniel Carpenter"],
       # These are the default files included in the package
       files: ~w(config lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["Apache-2.0"],
